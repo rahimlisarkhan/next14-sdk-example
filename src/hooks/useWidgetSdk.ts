@@ -3,6 +3,8 @@ import { useEffect } from "react";
 
 export const useWidgetSdk = () => {
   useEffect(() => {
+    console.log(window);
+
     // Check to ensure the code only runs on the client side
     if (typeof window !== "undefined") {
       // Prevent multiple script insertions
@@ -18,7 +20,8 @@ export const useWidgetSdk = () => {
           const initEl = document.createElement("script");
           initEl.text = `
             Whelp("init", {
-              app_id: "ddaa4869af1be6a5e5acfa2a8271692d"
+              app_id: "ddaa4869af1be6a5e5acfa2a8271692d",
+              viewportSetupOff:true
             });
           `;
           document.body.appendChild(initEl);

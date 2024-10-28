@@ -2,7 +2,7 @@
 
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import { useWidgetSdk } from "@/hooks/useWidgetSdk";
+import { useWidgetSdk } from "../hooks/useWidgetSdk";
 
 export function NavLinks() {
   const pathname = usePathname();
