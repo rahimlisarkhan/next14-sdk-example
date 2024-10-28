@@ -1,4 +1,3 @@
-import { useWidgetSdk } from "@/hooks/useWidgetSdk";
 import styles from "../page.module.css";
 
 export default function Page() {
